@@ -6,10 +6,10 @@ I provide the following models finetuned with a 384x384 image resolution on Tiny
 
 | name | acc@1 | #params | url |
 | --- | --- | --- | --- |
-| Swin-L | 86.31 | 304M | [model(TODO)](todo) |
-| CaiT-S | 86.64 | 68M | [model(TODO)](todo) |
-| DeiT-B distilled | 87.35 | 87M | [model(TODO)](todo) |
-| Swin-L | 91.35 | 195M | [model(TODO)](todo) |
+| ViT-L | 86.31 | 304M | [model](https://drive.google.com/file/d/1_3h4WhBsVc6PWgCqwWT5uOnzPxkD17Pn/view?usp=sharing) |
+| CaiT-S | 86.64 | 68M | [model](https://drive.google.com/file/d/1JrMWc_iuhz4JjOy_qc265UVEyhUG1cOK/view?usp=sharing) |
+| DeiT-B distilled | 87.35 | 87M | [model](https://drive.google.com/file/d/1JMFQMN1GfbUjcsqdDipazJn8CyJJ3u_p/view?usp=sharing) |
+| Swin-L | 91.35 | 195M | [model](https://drive.google.com/file/d/15YpRF0lFWAfoIto4FaQ0a-Y5pqusp3Zi/view?usp=sharing) |
 
 # Usage
 

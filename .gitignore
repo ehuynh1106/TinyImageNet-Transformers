@@ -8,3 +8,5 @@ discord_updates.py
 *.txt
 *.tar
 *.JPEG
+*.png
+!example.png
