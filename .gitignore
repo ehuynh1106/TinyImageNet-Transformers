@@ -1,0 +1,10 @@
+cam.py
+__pycache__
+debug.log
+test
+test.py
+discord_updates.py
+*.pkl
+*.txt
+*.tar
+*.JPEG
