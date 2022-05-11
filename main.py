@@ -1,6 +1,5 @@
 from data_aug import get_data_augmentations
 from dataset import load_train_data, load_val_data
-from discord_updates import DiscordWebhook
 from engine import train, validate
 from log import create_logger
 from math import ceil

@@ -70,6 +70,7 @@ def load_train_data(img_size, magnitude, batch_size):
     transform = transforms.Compose([
         transforms.RandomResizedCrop(img_size, scale=(1.0,1.0), ratio=(1.0, 1.0), interpolation=InterpolationMode.BICUBIC),
         transforms.RandAugment(num_ops=2,magnitude=magnitude),
+        transforms.AutoAugment(),
     ])
     train_dataset = ImageNetDataset(train_data, train_labels.type(torch.LongTensor), transform,
         normalize=transforms.Compose([

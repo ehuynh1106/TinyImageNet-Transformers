@@ -26,7 +26,7 @@ pip install -r requirements.txt
 # Data Preparation
 Download and extract Tiny ImageNet at [https://image-net.org/](https://image-net.org/) in the home directory of this repository.
 
-Then run `python fileio.py` to format the data. This will pickle the dataset into two files, `train_dataset.pkl` and `val_dataset.pkl` that will be used in the main code.
+Then run `python fileio.py` to format the data. This will convert the images into tensors and pickle them into two files, `train_dataset.pkl` and `val_dataset.pkl` that will be used in the main code.
 
 # Training
 To train a Swin-L model on Tiny ImageNet run the following command:
