@@ -7,7 +7,7 @@ I provide the following models finetuned with a 384x384 image resolution on Tiny
 | name | acc@1 | #params | url |
 | --- | --- | --- | --- |
 | ViT-L | 86.31 | 304M | [model](https://drive.google.com/file/d/1_3h4WhBsVc6PWgCqwWT5uOnzPxkD17Pn/view?usp=sharing) |
-| CaiT-S | 86.64 | 68M | [model](https://drive.google.com/file/d/1JrMWc_iuhz4JjOy_qc265UVEyhUG1cOK/view?usp=sharing) |
+| CaiT-S36 | 86.64 | 68M | [model](https://drive.google.com/file/d/1JrMWc_iuhz4JjOy_qc265UVEyhUG1cOK/view?usp=sharing) |
 | DeiT-B distilled | 87.35 | 87M | [model](https://drive.google.com/file/d/1JMFQMN1GfbUjcsqdDipazJn8CyJJ3u_p/view?usp=sharing) |
 | Swin-L | 91.35 | 195M | [model](https://drive.google.com/file/d/15YpRF0lFWAfoIto4FaQ0a-Y5pqusp3Zi/view?usp=sharing) |
 
@@ -33,7 +33,7 @@ To train a Swin-L model on Tiny ImageNet run the following command:
 ```
 python main.py --train --model swin
 ```
-Note: Training checkpoints are automatically saved in `/models` and visualizations of predictions on the validation are automically saved to `/predictions` after half of the epochs.
+Note: Training checkpoints are automatically saved in `/models` and visualizations of predictions on the validation set are automically saved to `/predictions` after half of the epochs have passed.
 
 To train DeiT, ViT, and CaiT, replace `--model swin` with `--model deit/vit/cait`.
 

@@ -9,7 +9,7 @@ def train(model, loss_fn, optimizer, device, train_loader, scheduler, loss_scale
     loss_ema = -1
     iterator = tqdm(train_loader, total=int(len(train_loader)))
     
-    accumulate = False
+    update = False
 
     if type(model).__name__ == 'VisionTransformerDistilled':
         model.eval()
@@ -26,17 +26,16 @@ def train(model, loss_fn, optimizer, device, train_loader, scheduler, loss_scale
         if random_erase:
             x = random_erase(x)
 
-        accumulate = True if (i+1) % update_freq == 0 or i + 1 == len(train_loader) else False
+        update = True if (i+1) % update_freq == 0 or i + 1 == len(train_loader) else False
         with torch.cuda.amp.autocast():
             pred = model(x)
             loss = loss_fn(pred, y)
-        loss_scaler(loss, optimizer, parameters=model.parameters(), accumulate=accumulate)
+        loss_scaler(loss, optimizer, update_grad=update)
 
-        if accumulate:
+        if update:
             for param in model.parameters():
                 param.grad = None
             scheduler.step()
-            
 
         with torch.no_grad():
             if loss_ema < 0:
