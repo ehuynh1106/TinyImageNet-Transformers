@@ -6,7 +6,7 @@ test.py
 discord_updates.py
 *.pkl
 *.txt
-*.tar
+*.pth
 *.JPEG
 *.png
 !example.png
