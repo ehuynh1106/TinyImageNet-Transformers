@@ -11,12 +11,12 @@ def train(model, loss_fn, optimizer, device, train_loader, scheduler, loss_scale
     
     update = False
 
+    # deit finetunes in eval mode
     if type(model).__name__ == 'VisionTransformerDistilled':
         model.eval()
     else:
         model.train()
 
-    iters = len(iterator)
     for i, (x, y) in enumerate(iterator):
         x, y = x.to(device, non_blocking=True), y.to(device, non_blocking=True)
         

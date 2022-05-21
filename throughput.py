@@ -1,3 +1,7 @@
+"""
+Taken from Swin transformer (https://github.com/microsoft/Swin-Transformer)
+"""
+
 import time, torch
 
 @torch.no_grad()

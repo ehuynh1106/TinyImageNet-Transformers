@@ -1,3 +1,8 @@
+"""
+Taken from timm (https://github.com/rwightman/pytorch-image-models) and
+modified to work with gradient accumulation
+"""
+
 import torch
 from timm.utils.clip_grad import dispatch_clip_grad
 

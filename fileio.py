@@ -73,10 +73,9 @@ def pickle_data(data, label, filename):
     outfile.close()
 
 if __name__ == '__main__':
-    # data, labels = get_train_data()
-    # print(data.shape, labels.shape)
-    # pickle_data(data, labels, 'train_dataset.pkl')
+    data, labels = get_train_data()
+    print(data.shape, labels.shape)
+    pickle_data(data, labels, 'train_dataset.pkl')
     data, labels = get_val_data()
     print(data.shape, labels.shape)
     pickle_data(data, labels, 'val_dataset.pkl')
-    pass

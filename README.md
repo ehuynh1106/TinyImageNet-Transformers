@@ -6,10 +6,10 @@ I provide the following models finetuned with a 384x384 image resolution on Tiny
 
 | name | acc@1 | #params | url |
 | --- | --- | --- | --- |
-| ViT-L | 86.31 | 304M | [model](https://drive.google.com/file/d/1_3h4WhBsVc6PWgCqwWT5uOnzPxkD17Pn/view?usp=sharing) |
-| CaiT-S36 | 86.64 | 68M | [model](https://drive.google.com/file/d/1JrMWc_iuhz4JjOy_qc265UVEyhUG1cOK/view?usp=sharing) |
-| DeiT-B distilled | 87.35 | 87M | [model](https://drive.google.com/file/d/1JMFQMN1GfbUjcsqdDipazJn8CyJJ3u_p/view?usp=sharing) |
-| Swin-L | 91.35 | 195M | [model](https://drive.google.com/file/d/15YpRF0lFWAfoIto4FaQ0a-Y5pqusp3Zi/view?usp=sharing) |
+| ViT-L | 86.43 | 304M | [model](https://github.com/ehuynh1106/TinyImageNet-Transformers/releases/download/weights/vit_large_384.pth) |
+| CaiT-S36 | 86.74 | 68M | [model](https://github.com/ehuynh1106/TinyImageNet-Transformers/releases/download/weights/cait_s36_384.pth) |
+| DeiT-B distilled | 87.29 | 87M | [model](https://github.com/ehuynh1106/TinyImageNet-Transformers/releases/download/weights/deit_base_distilled_384.pth) |
+| Swin-L | 91.35 | 195M | [model](https://github.com/ehuynh1106/TinyImageNet-Transformers/releases/download/weights/swin_large_384.pth) |
 
 # Usage
 
