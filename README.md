@@ -1,5 +1,5 @@
 # Vision Transformers in 2022: An Update on Tiny ImageNet
-This is the official PyTorch repository of [Vision Transformers in 2022: An Update on Tiny ImageNet](report.pdf) with pretrained models and training and evaluation scripts.
+This is the official PyTorch repository of [Vision Transformers in 2022: An Update on Tiny ImageNet](https://arxiv.org/abs/2205.10660) with pretrained models and training and evaluation scripts.
 
 # Model Zoo
 I provide the following models finetuned with a 384x384 image resolution on Tiny ImageNet.
