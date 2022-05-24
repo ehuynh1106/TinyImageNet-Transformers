@@ -1,4 +1,6 @@
 # Vision Transformers in 2022: An Update on Tiny ImageNet
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/vision-transformers-in-2022-an-update-on-tiny/image-classification-on-tiny-imagenet-1)](https://paperswithcode.com/sota/image-classification-on-tiny-imagenet-1?p=vision-transformers-in-2022-an-update-on-tiny)
+
 This is the official PyTorch repository of [Vision Transformers in 2022: An Update on Tiny ImageNet](https://arxiv.org/abs/2205.10660) with pretrained models and training and evaluation scripts.
 
 # Model Zoo
