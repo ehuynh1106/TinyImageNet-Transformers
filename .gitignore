@@ -10,3 +10,4 @@ discord_updates.py
 *.JPEG
 *.png
 !example.png
+!requirements.txt

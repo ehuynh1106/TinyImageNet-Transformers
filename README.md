@@ -49,3 +49,15 @@ To evaluate a Swin-L model on the validation set of Tiny ImageNet run the follow
 ```
 python main.py --evaluate /path/to/model --model swin
 ```
+
+# Citing
+```bibtex
+@misc{huynh2022vision,
+      title={Vision Transformers in 2022: An Update on Tiny ImageNet}, 
+      author={Ethan Huynh},
+      year={2022},
+      eprint={2205.10660},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```

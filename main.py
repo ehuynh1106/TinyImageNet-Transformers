@@ -89,10 +89,7 @@ def load_optimizer(args, model):
         sys.exit(1)
 
     return optimizer
-"""
-Experiments:
-Train other models with new experimental setting
-"""
+
 if __name__ == '__main__':
     logger = create_logger()
     args = parse_args()
