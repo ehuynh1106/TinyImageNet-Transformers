@@ -28,6 +28,18 @@ pip install -r requirements.txt
 # Data Preparation
 Download and extract Tiny ImageNet at [https://image-net.org/](https://image-net.org/) in the home directory of this repository.
 
+Stanford hosts a copy that works to reproduce the results of this repo. For example, from the home directory of this project run in terminal
+
+```
+wget http://cs231n.stanford.edu/tiny-imagenet-200.zip
+```
+
+and extract the contents to the home directory
+
+```
+unzip tiny-imagenet-200.zip && mv tiny-imagenet-200/* . && rmdir tiny-imagenet-200
+```
+
 Then run `python fileio.py` to format the data. This will convert the images into tensors and pickle them into two files, `train_dataset.pkl` and `val_dataset.pkl` that will be used in the main code.
 
 # Training

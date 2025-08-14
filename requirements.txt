@@ -1,8 +1,8 @@
+torch>=2.0.0
+torchvision>=0.15.0
 timm==0.6.7
---extra-index-url https://download.pytorch.org/whl/cu116
-torch==1.12.1
-torchvision==0.13.1
-
+datasets
+huggingface_hub
 opencv-python
 pandas
 numpy

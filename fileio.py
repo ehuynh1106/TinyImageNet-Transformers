@@ -18,7 +18,7 @@ pickle_data()    # pickle the dataset for fast reading
 
 def get_label_mapping():
     object_mapping = pd.read_csv('words.txt', sep='\t', index_col=0, names=['label'])
-    labels_str = [f.name for f in os.scandir('train') if f.is_dir()]
+    labels_str = sorted([f.name for f in os.scandir('train') if f.is_dir()])
     labels = pd.DataFrame(labels_str, columns=['id'])
     labels['label'] = [object_mapping.loc[ids].item() for ids in labels['id']]
 
@@ -26,7 +26,7 @@ def get_label_mapping():
 
 def get_train_data(one_hot=False):
     train_data = torch.Tensor().type(torch.ByteTensor)
-    labels_str = [f.name for f in os.scandir('train') if f.is_dir()]
+    labels_str = sorted([f.name for f in os.scandir('train') if f.is_dir()])
     labels = []
     i = 1
     for root, dirs, files in os.walk('train'):
@@ -49,7 +49,7 @@ def get_train_data(one_hot=False):
 
 def get_val_data(one_hot=False):
     val_data = torch.Tensor().type(torch.ByteTensor)
-    labels_str = [f.name for f in os.scandir('train') if f.is_dir()]
+    labels_str = sorted([f.name for f in os.scandir('train') if f.is_dir()])
     labels = []
     val_annotations = pd.read_csv('val/val_annotations.txt', sep='\t', names=['filename', 'label_str', 'x_min', 'y_min', 'x_max', 'y_max'])
     num_imgs = len(os.listdir('val/images'))
